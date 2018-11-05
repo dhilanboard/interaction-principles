@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Principles of Interaction Design</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- User - custom stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-phone.css"> -->
+
+    <!-- Stylesheet for sass directory  -->
+    <link rel="stylesheet" href="../sass/style.css">
+
+    <!-- back to top css -->
+    <link rel="stylesheet" type="text/css" href="../css/to-top.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,300,400,500" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main principles-pages">
+
+  	<div id="main-nav-container">
+	  	<!-- the main nav content (nav.html) comes here -->
+  	</div>
+
+  	<div class="container">
+		<div class="row content-row">
+			<div id="anticipation" class="content-container col-md-12">
+			<h1 class="col-md-10 col-md-offset-1">Fitt's Law</h1>
+			<a href="introduction.html" class="col-md-offset-1 col-md-10 backto">back to introduction</a>
+			
+			<h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> The time to acquire a target is a function of the distance to and size of the target</h4>
+
+      <p class="col-md-10 col-md-offset-1">Use large objects for important functions (Big buttons are faster). Use small objects for functions you would prefer users not perform.</p>
+
+      <p class="col-md-10 col-md-offset-1">Use the pinning actions of the sides, bottom, top, and corners of your display: A single-row toolbar with tool icons that “bleed” into the edges of the display will be significantly faster than a double row of icons with a carefully-applied one-pixel non-clickable edge between the closer tools and the side of the display. (Even a one-pixel boundary can result in a 20% to 30% slow-down for tools along the edge.)</p>
+
+      <p class="col-md-10 col-md-offset-1">While at first glance, this law might seem patently obvious, it is one of the most ignored principles in design. Fitts’s law (often improperly spelled “Fitts’ Law”) dictates the Macintosh pull-down menu acquisition should be approximately five times faster than Windows menu acquisition, and this is proven out.</p>
+
+      <p class="col-md-10 col-md-offset-1">Fitts’s law predicted that the Windows Start menu was built upside down, with the most used applications farthest from the entry point, and tests proved that out. Fitts’s law indicated that the most quickly accessed targets on any computer display are the four corners of the screen, because of their pinning action, and yet, for years, they seemed to be avoided at all costs by designers.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Multiple Fitts: The time to acquire multiple targets is the sum of the time to acquire each</h4>
+
+      <p class="col-md-10 col-md-offset-1">In attempting to “Fittsize” a design, look to not only reduce distances and increase target sizes, but to reduce the total number of targets that must be acquired to carry out a given task. Remember that there are two classes of targets: Those found in the virtual world—buttons, slides, menus, drag drop-off points, etc., and those in the physical world—keyboards and the keys upon them, mice, physical locations on touch screens. All of these are targets.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Fitts’s Law is in effect regardless of the kind of pointing device or the nature of the target</h4>
+
+      <p class="col-md-10 col-md-offset-1">Fitts’s Law was not repealed with the advent of smartphone or tablets. Paul Fitts, who first postulated the law in the 1940s, was working on aircraft cockpit design with physical controls, something much more akin to a touch interface rather than the indirect manipulation of a mouse. The pinning action of the sides and corners will be absent unless the screen itself is inset, but the distance to and size of the target continue to dictate acquisition times per Fitts’s law just as always.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Fitts’s Law requires a stop watch test</h4>
+
+      <p class="col-md-10 col-md-offset-1">Like so much in the field of human-computer interaction, you must do a timed usability study to test for Fitts’s Law efficiency.</p>
+
+		</div>
+		</div>
+	</div>
+
+	<!-- back to top icon -->
+  <a href="#0" class="cd-top">Top</a>
+
+  <!-- footer navigation -->
+  <footer class="footer">
+    <a class="pull-left" href="explorable-interfaces.html">back to -- Explorable Interfaces</a>
+    <a class="pull-right" href="human-interface-objects.html">next -- Human Interface Objects</a>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$("#main-nav-container").load("nav.html");
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined js -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- Back to top javascript -->
+    <script type="text/javascript" src="../js/back-top.js"></script>
+  </body>
+</html>

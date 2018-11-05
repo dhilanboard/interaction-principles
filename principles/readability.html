@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Principles of Interaction Design</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- User - custom stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-phone.css"> -->
+
+    <!-- Stylesheet for sass directory  -->
+    <link rel="stylesheet" href="../sass/style.css">
+
+    <!-- back to top css -->
+    <link rel="stylesheet" type="text/css" href="../css/to-top.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,300,400,500" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main principles-pages">
+
+  	<div id="main-nav-container">
+	  	<!-- the main nav content (nav.html) comes here -->
+  	</div>
+
+  	<div class="container">
+		<div class="row content-row">
+			<div id="anticipation" class="content-container col-md-12">
+			<h1 class="col-md-10 col-md-offset-1">Readability</h1>
+			<a href="introduction.html" class="col-md-offset-1 col-md-10 backto">back to introduction</a>
+			
+			<h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Text that must be read should have high contrast</h4>
+
+      <p class="col-md-10 col-md-offset-1">Favor black text on white or pale yellow backgrounds. Avoid gray backgrounds.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Use font sizes that are large enough to be readable on standard displays</h4>
+
+      <p class="col-md-10 col-md-offset-1">You must demand of your marketing people that they tell you what the expected range of your customer’s standard displays will be. You then need to work with your graphic design and engineering people to ensure that your code will show up in appropriate sizes across that range of displays. It need not be one-size-fits-all. For example, CSS can mold itself to the system in which it finds itself.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Favor particularly large characters for the actual data you intend to display, as opposed to labels and instructions.</h4>
+
+      <p class="col-md-10 col-md-offset-1">For example, the label, “Last Name,” can afford to be somewhat small. Habitual users will learn that that two-word gray blob says “Last Name.” Even new users, based on the context of the form on which it appears, will have a pretty good guess that it says “Last Name.” The actual last name entered/displayed, however, must be clearly readable. This becomes even more important for numbers. Human languages are highly redundant, enabling people to “heal” garbled messages. Numbers, however, unless they follow a very strict protocol, have no redundancy, so people need the ability to examine and comprehend every single character.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Menu and button labels should have the key word(s) first, forming unique labels</h4>
+
+      <p class="col-md-10 col-md-offset-1">Experienced users read only as much of an item name to differentiate among items. Highly experienced users actually trigger on the difference in the external shapes of the entire first word(s) without ever actually reading anything.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Test all designs on your oldest expected user population</h4>
+
+      <p class="col-md-10 col-md-offset-1">Presbyopia, the condition of hardened, less flexible lenses, coupled with reduced light transmission into the eye, affects most people over age 45. Do not trust your young eyes to make size and contrast decisions. You cannot.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> There’s often an inverse relationship between the “prettiness” of a font and its readability.</h4>
+
+      <p class="col-md-10 col-md-offset-1">Specifically, anti-aliasing softens the edges of a font, giving it a much smoother appearance on the digital page. The problem is that the human vision system responds to sharp edges, so, in smaller font sizes, an anti-aliased font, while often appearing more attractive, can be quite difficult to comprehend.There are anti-alias techniques that specifically increase the sharpness of the edges the eye is seeking, so this is not strictly a black and white issue (so to speak), but it is definitely something of which you should be aware and not something in which every graphic designer has been schooled. You will want to run some reading speed and comprehension tests on proposed font changes.</p>
+
+		</div>
+		</div>
+	</div>
+
+	<!-- back to top icon -->
+  <a href="#0" class="cd-top">Top</a>
+
+  <!-- footer navigation -->
+  <footer class="footer">
+    <a class="pull-left" href="protect-users-work.html">back to -- Protect Users Work</a>
+    <a class="pull-right" href="simplicity.html">next -- simplicity</a>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$("#main-nav-container").load("nav.html");
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined js -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- Back to top javascript -->
+    <script type="text/javascript" src="../js/back-top.js"></script>
+  </body>
+</html>

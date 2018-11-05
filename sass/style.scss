@@ -1,0 +1,466 @@
+// Fonts variables
+$ff-sans: 'Raleway', sans-serif;
+$ff-serif: 'Crimson Text', serif;
+
+// Color Variables - Greyscale colors ---  colors from dark to light
+$black :#000000;
+$dark : #2c3e50; // #242424 --- the color for default text in content
+$ash: #555555;
+$medium-dark: #8c8c8c;
+$light-grey: #efefef; //--- the color for background to show quotes of special section etc.
+$white: #ffffff;
+
+// Color variables - Colors here
+$primary-color: #ffcc05 ; //---yellow color
+$secondary-color: #eb2026; //---red color
+$gama-color: #f1635c; //---light red
+$light-color: #fff1bb; //---light yellow
+
+// Transitions variables
+$hover-ease: all .15s ease-in;
+$slide-ease: all .3s ease-in;
+
+// For targeting the @ media queries
+$breakpoint-tablet: 768px; // --- for Tablet and below
+
+
+// the styles start here -------
+body {
+	font-family: $ff-serif;
+	font-size: 16px;
+	color: $dark;
+	min-height: 90vh;
+	header {
+		margin-bottom: 60px;
+	}
+	&.main {
+		//padding-bottom: 100px;
+		border-bottom: 5px solid $primary-color;
+		min-height: 100vh;
+	}
+	a {
+		color: $black;
+	    text-decoration: underline;
+	    transition: $hover-ease;
+	    &:hover {
+				border-bottom: 0px solid $ash;
+				background-color: $light-color;
+				text-decoration: none;
+				color: $secondary-color;
+				transition: $hover-ease;
+	    }
+	}
+	blockquote {
+		background-color: $light-color;
+	    border-left-color: $primary-color;
+	    font-size: 1.2em;
+	    font-weight: 100;
+	    padding: 25px 25px;
+	    margin: 15px 0 50px;
+	    h3 {
+	    	font-family: $ff-sans;
+	    	color: $secondary-color;
+	    }
+	    h5 {
+			color: $ash !important;
+			font-size: 1em !important;
+		    font-weight: 500;
+		    line-height: 26px;
+		}
+	    p {
+	    	font-size: 1em;
+	    	color: $black;
+	    	padding-bottom:15px;
+	    }
+	}
+	em {
+		color: $ash;
+		font-style: normal;
+		font-family: $ff-sans;
+		margin: 25px 0 10px;
+		display: block;
+		font-weight: 300;
+	}
+	h1 {
+		font-family: $ff-sans;
+		font-weight: 100;
+		font-size: 6em;
+		color: $medium-dark;
+		margin-bottom: 50px;
+	}
+	h2, h3, h4, h5 {
+		color: $dark;
+		margin-bottom: 30px;
+	}
+	h4{
+		font-size: 1.3em;
+		line-height: 1.4em;
+	}
+	h2 {
+		padding: 5px;
+		border-bottom: 3px solid $secondary-color;
+	}
+	p {
+		color: $ash;
+		font-weight: 300;
+		font-size: 1.1em;
+		padding-bottom: 40px;
+	}
+	&.index {
+		background: url(../images/illus-1.jpg) no-repeat center bottom 20px;
+		height: 750px;
+		min-height: 100vh;
+		header {
+			text-align: center;
+			margin-top: 35px;
+			margin-bottom: 0;
+			h1 {
+				margin: 30px auto 15px;
+				font-size: 3em;
+				color: $dark;
+				i {
+					font-family: $ff-serif;
+					padding: 5px;
+					border-bottom: 2px solid $secondary-color;
+					color: $black;
+				}
+			}
+			p {
+				font-size: 1.2em;
+				margin: 40px auto 0 auto;
+				a.start-bttn {
+					background-color: $primary-color;
+			    	color: $dark;
+			    	padding: 7px 25px;
+			    	text-decoration: none;
+			    	border: none;
+			    	border-radius: 5px;
+			    	top: 1px;
+			    	position: relative;
+			    	transition: $hover-ease;
+			    	&:hover {
+			    		box-shadow: 0px 4px 10px -3px rgba(0,0,0,.25);
+			    		top: 0px;
+			    		transition: $hover-ease;
+			    	}
+				}
+			}
+		}
+	}
+}
+
+ // main navigation styles - Home page
+ nav .nav {
+	margin-right: 50px;
+	margin-top: 35px;
+	> li {
+		a {
+			padding: 3px 15px;
+			border-radius: 20px;
+			font-family: $ff-sans;
+			font-weight: 500;
+			font-size: 13px;
+			text-decoration: none;
+			background-color: $white;
+			color: $medium-dark;
+			transition: $hover-ease;
+			&:focus, &:hover{
+				background-color: $light-grey;
+				color: $ash;
+			}
+		}
+		&.active > a {
+			background-color: $light-grey;
+			color: $secondary-color;
+			&:hover, &:active, &:focus {
+				background-color: $light-grey;
+				color: $gama-color;
+			}
+
+		}
+	}
+}
+
+footer.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	width: 90%;
+	max-width: 1000px;
+	margin: 100px auto;
+	padding-top: 75px;
+	border-top: 1px dashed #b4b4b4;
+	a{
+		border-bottom: 2px solid rgba(235, 32, 38, 0.5);
+		display: block;
+	    box-sizing: border-box;
+		text-align: center;
+		font-family: "Raleway", sans-serif;
+		font-weight: 400;
+		text-decoration: none;
+		color: rgba(235, 32, 38, 0.5);
+    	font-size: 13px;
+		&:hover {
+			border-color: rgba(235, 32, 38, 1);
+			background: none;
+			color: $secondary-color;
+		}
+	}
+}
+
+// back to top - css
+.cd-top{
+	&.cd-is-visible {
+		/* the button becomes visible */
+		visibility: visible;
+		opacity: 1;
+	}
+	&.cd-fade-out {
+		/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+		opacity: .5;
+	}
+}
+
+// Intropage - Principles list styles
+.intro, .main {
+	.content-row {
+		padding-top: 60px;
+	}
+	a.spaned {
+		font-size: 12px;
+		font-family: $ff-sans;
+		display: block;
+		text-align: right;
+		position: relative;
+		top: -70px;
+		padding: 5px 20px 5px 0 ;
+		color: $secondary-color;
+		&:hover {
+			opacity: .5;
+		}
+	}
+	a.backto {
+		font-size: 12px;
+		font-family: $ff-sans;
+		display: block;
+		text-align: right;
+		position: relative;
+		top: -70px;
+		padding: 5px 20px 5px 0 ;
+		color: $secondary-color;
+		&:hover {
+			opacity: .5;
+		}
+	}
+	#principles-list {
+		margin-bottom: 50px;
+		li {
+		border-bottom: 1px dotted $medium-dark;
+		padding: 0;
+			a {
+				text-decoration: none;
+				font-size: 1.3em;
+				line-height: 50px;
+				display: block;
+				margin:0;
+				padding:0 15px;
+				&:hover {
+					background-color: $secondary-color;
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+.principles-pages {
+	h4{
+		margin-bottom: 15px;
+		font-size: 1.4em;
+		font-weight: 400;
+		&:before{
+			content: "\e239";
+			width: 5px;
+		    height: 15px;
+		    // background: $secondary-color;
+		    float: left;
+		    margin-left: -30px;
+		    margin-top: 4px;
+		    font-family: 'Glyphicons Halflings';
+		    font-style: normal;
+		    font-weight: 400;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    font-size: 19px;
+		    color: $primary-color;
+		}
+		span.principles-tag {
+			color: $gama-color;
+			font-style: italic;
+			// display: block;
+			// line-height: 38px;
+		}
+	}
+	h5 {
+		font-size: 1.2em;
+		font-family: $ff-sans;
+		color: $gama-color;
+		span {
+			color: $primary-color;
+			margin-right: 10px;
+			font-size: 16px;
+		}
+	}
+}
+
+.main-page-nav-open {
+	position: fixed;
+	color: $white;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background: $secondary-color;
+    line-height: 50px;
+    text-align: center;
+    &:hover{
+    	background-color: $primary-color;
+    	color: $secondary-color;
+    }
+}
+
+.principles-nav-list {
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+	top: 0;
+	left: -100vw;
+	background-color: $dark;
+	position: fixed;
+	z-index: 9999;
+	transition: $slide-ease;
+	&.open-list {
+		left: 0;
+		transition: $slide-ease;
+	}
+	.principles-navs {
+		// background-color: $secondary-color;
+		h3{
+			font-family: $ff-sans;
+			font-size: 1.6em;
+			color: $white;
+		    border-bottom: 2px solid $primary-color;
+		    padding: 50px 15px 15px;
+		    font-weight: 300;
+		}
+		ol {
+			margin-top: 20px;
+			li {
+				border-bottom: 1px dotted rgba(255,255,255, .3);
+				padding:0;
+				a {
+					text-decoration: none;
+				    font-size: 1.3em;
+				    line-height: 50px;
+				    display: block;
+				    margin: 0;
+				    padding: 0 15px;
+				    color: $white;
+				    &:hover {
+				    	background-color: rgba(0,0,0,.2);
+				    	color: $white;
+				    }
+				}
+			}
+		}
+	}
+	.main-page-nav-close {
+		position: absolute;
+		color: $white;
+		z-index: 9999;
+		width: 50px;
+	    height: 50px;
+	    background: $secondary-color;
+	    line-height: 50px;
+	    text-align: center;
+	    left: 0;
+	    top: 0;
+	    &:hover{
+	    	background-color: $primary-color;
+	    	color: $secondary-color;
+	    }
+	}
+	.global-nav {
+		ul {
+			margin-top: 150px;
+			padding-left: 50px;
+			min-height: calc(100vh - 300px);
+			border-left: 2px solid rgba(0,0,0,.1);
+			li{
+				margin-bottom: 20px;
+				a {
+					color: $gama-color;
+					font-family: $ff-sans;
+					text-decoration: none;
+					font-size: .8em;
+					font-weight: 500;
+					&:hover {
+						font-size: 1em;
+						color: $white;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+
+.grey-area:before {
+	position: absolute;
+	z-index: -1;
+	width: 80%;
+	left: -50px;
+	height: 100%;
+	background-color: #f8f8f8;
+	content: "";
+	top: -20px;
+}
+
+// Media queries for tablet and below
+@media only screen and (max-width: 768px) {
+	body {
+		&.index {
+			height: 950px;
+		}
+		header {
+			margin-bottom: 100px;
+		}
+		h1 {
+			font-size: 3em;
+		}
+	}
+	.principles-nav-list {
+		.global-nav{
+			min-height: auto;
+			height: auto;
+			overflow: hidden;
+			ul{
+				margin-top: 20px;
+			    padding-left: 0px;
+			    border-left: 0;
+			    font-size: 1.2em;
+			    min-height: auto;
+			    margin-bottom: 40px;
+		    	li {
+		    		border-bottom: 1px dotted rgba(255, 255, 255, .3);
+		    		margin-bottom: 0;
+		    		line-height: 40px;
+		    		a {			    		
+			    		padding-left: 15px;
+			    	}
+		    	}
+		    
+			}
+		}
+	}
+}

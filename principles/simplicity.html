@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Principles of Interaction Design</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- User - custom stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-phone.css"> -->
+
+    <!-- Stylesheet for sass directory  -->
+    <link rel="stylesheet" href="../sass/style.css">
+
+    <!-- back to top css -->
+    <link rel="stylesheet" type="text/css" href="../css/to-top.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,300,400,500" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main principles-pages">
+
+  	<div id="main-nav-container">
+	  	<!-- the main nav content (nav.html) comes here -->
+  	</div>
+
+  	<div class="container">
+		<div class="row content-row">
+			<div id="anticipation" class="content-container col-md-12">
+			<h1 class="col-md-10 col-md-offset-1">Simplicity</h1>
+			<a href="introduction.html" class="col-md-offset-1 col-md-10 backto">back to introduction</a>
+			
+			<h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Balance ease of installation vs. ease of use</h4>
+
+      <p class="col-md-10 col-md-offset-1">As designers, we need to strive to simplify users’ lives. That often requires a delicate balance between our effort to make installation of a product easier and making subsequent use of that product easier or better.</p>
+
+      <p class="col-md-10 col-md-offset-1">Consider the autofill feature for browsers: The user is required to enter and maintain a database of information the browser can then drop into a form at the user’s command. It takes time to set it up, and every time anything changes, it’s just one more record that has to be altered. What’s more, it often fails to work, either not responding or putting incorrect data all over the place.</p>
+
+      <p class="col-md-10 col-md-offset-1">Apple has simplified the setup process by enabling the user to link Safari’s autoFill to the user’s contact card in his or her address book. However, the ability of Safari to actually fill out a form is just as dismal as it’s ever been, largely because there is no standardization of labels, locations, or anything else in forms.</p>
+
+      <p class="col-md-10 col-md-offset-1">I have solved the autoFill problem with a more technically complex solution: I use an app called Keyboard Maestro that sits in the background looking for certain key combinations. When it finds one I’ve programmed, it automatically replaces the text I’ve typed with a string of text I’ve previously stored. Setup was definitely more difficult, but now when I open a form and a field calls for my first name, I type, “bbbb” and it’s replaced with “Bruce.” I type “aaaa” and my address appears, “pppp” and my phone number pops into place, etc. It takes me 30 seconds to fill out a form, longer than autoFill would if it actually worked, but this method works on every single form every single time. It saves me time, effort, and frustration.</p>
+
+      <p class="col-md-10 col-md-offset-1">Often, you can assume that one user in the house will be technically inclined. When you have a trade-off between simplicity of installation/set-up and ease-of-use, get together with your marketing people. If they tell you that you can depend on at least one reasonably clever or sophisticated user, do make life a bit more difficult at first if it will make subsequent use a lot simpler for everyone else. However, expend effort making both installation and operation as simple as possible. That’s the approach that Nest took, where one person in the house must go through a complex and confusing process to tie their products to the Internet, but thereafter the lives of everyone in the house become simper.</p>
+
+      <p class="col-md-10 col-md-offset-1">(In Nest’s defense, they are doing their best to overcome a major flaw in the way Wi-Fi set up to work. It requires users to leave their normal Wi-Fi and log in to a new “network” with a gobbledygook name which is, in fact, their Nest device. This is a weird, backwards activity that throws most users the first time they encounter it. It also requires their going into the “basement area” of their phone or tablet, a place most users avoid whenever possible. It’s all-around bad, and the committees that oversee the Wi-Fi protocol need to address the issue if connected devices are to take off on an expanded basis.)</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Avoid the “Illusion of Simplicity”</h4>
+
+      <p class="col-md-10 col-md-offset-1">In the early years of this century, Apple became so focused on generating the illusion of simplicity for the potential buyer that they began seriously eroding the productivity of their products. They thought they had a good reason: They wanted new products to look bright, shiny, and simple to potential users. That’s an excellent goal, but actual simplicity is achieved by simplifying things, not by hiding complexity. (See Visibility.)</p>
+
+      <p class="col-md-10 col-md-offset-1">It’s just fine to make your showroom products look simple, but, to the extent you want to hide complexity to avoid scaring away buyers, do so in the showroom, not in the home or office of the purchaser now trying to accomplish real work. I started putting a special Dealer Mode into Apple software in 1978, so that the product would look and act differently in the showroom than in the buyer’s home. Computers allow that. Somewhere along the line, people forgot.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Use Progressive Revelation to flatten the learning curve</h4>
+
+      <p class="col-md-10 col-md-offset-1">It is OK to make the user’s environment simpler when they are learning by hiding more advanced pathways and capabilities, revealing them when users come to need them and know how to handle them. This is distinct from the illusion of simplicity, where necessary controls are made invisible or hidden in obscure and unusual places so that users have to go on treasure hunts to find the tools they need to use right now.</p>
+
+      <p class="col-md-10 col-md-offset-1">Progressive revelation can cut down on support costs by eliminating calls from users trying to understand advanced capabilities before they have learned enough about the task domain to need them. It can also raise costs if advanced features are not introduced when they are needed or are too well hidden.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Do not simplify by eliminating necessary capabilities</h4>
+
+      <p class="col-md-10 col-md-offset-1">This became another Apple problem after the release of their mobile devices. In 2014 on a Mac, you can set an alarm that will trigger 90 minutes before a calendar event. On the iPad, you can set a trigger for either one hour or two, but not 90 minutes. If a person needs a warning 90 minutes before the event, that’s when they need the warning. Apple has “simplified” the interface by giving the user no way to set an arbitrary time. No weakness or defect in the underlying interface would prevent Apple from giving users this capability. It is a conscious decision to limit what people can do with the product.</p>
+
+      <p class="col-md-10 col-md-offset-1">The way you set a 90 minute warning on an iPad is to create a second event, 30 minutes before the real event, and set a 60 minute warning.</p>
+
+      <p class="col-md-10 col-md-offset-1"><b>How is that simpler?</b></p>
+
+      <p class="col-md-10 col-md-offset-1">Likewise, they have a very simple interface for finding photographs in your collection: You look through all your folders of photographs, one at a time, until you find the picture you’re looking for. Apple will neither display nor allow you to sort/search on the title, caption, or keywords you’ve carefully associated with your images. One can argue that the interface is simple: If you want to find a specific photo among that 20,000 on your iDevice, just look through your 73 folders you’ve created in iPhoto or Aperture to hold them until you find it. You don’t have to learn about searching, you don’t have to remember the name, you just have to have 10 to 20 minutes on your hands to spend the time looking.</p>
+
+      <p class="col-md-10 col-md-offset-1"><b>How is that simple?</b></p>
+
+      <p class="col-md-10 col-md-offset-1">Fortunately, after many years, help is at hand: Apps like Photo Shack HD (the HD is important) enable you to search on all the criteria that Apple is importing but refusing to show you. That’s OK for really advanced features. However a remarkably high percentage (100% to be exact) know how to search.</p>
+
+		</div>
+		</div>
+	</div>
+
+	<!-- back to top icon -->
+  <a href="#0" class="cd-top">Top</a>
+
+  <!-- footer navigation -->
+  <footer class="footer">
+    <a class="pull-left" href="readability.html">back to -- readability</a>
+    <a class="pull-right" href="track-state.html">next -- State</a>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$("#main-nav-container").load("nav.html");
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined js -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- Back to top javascript -->
+    <script type="text/javascript" src="../js/back-top.js"></script>
+  </body>
+</html>

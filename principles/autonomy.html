@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Principles of Interaction Design</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- User - custom stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-phone.css"> -->
+
+    <!-- Stylesheet for sass directory  -->
+    <link rel="stylesheet" href="../sass/style.css">
+
+    <!-- back to top css -->
+    <link rel="stylesheet" type="text/css" href="../css/to-top.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,300,400,500" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main principles-pages">
+
+  	<div id="main-nav-container">
+	  	<!-- the main nav content (nav.html) comes here -->
+  	</div>
+
+  	<div class="container">
+		<div class="row content-row">
+			<div id="autonomy" class="content-container col-md-12">
+			<h1 class="col-md-10 col-md-offset-1">Autonomy</h1>
+			<a href="introduction.html" class="col-md-offset-1 col-md-10 backto">back to introduction</a>
+
+      <p class="col-md-10 col-md-offset-1 grey-area">“A site designed for flow must appeal to new users and power users alike. It must stretch both sets of users in a way they find enjoyable rather than daunting.” - <b><a href="http://www.jimramsey.net/">Jim Ramsey</a></b> </p>
+
+			<h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> The computer, interface, and task environment all “belong” to the user, but user-autonomy doesn’t mean we abandon rules</h4>
+      <p class="col-md-10 col-md-offset-1">Give users some breathing room. Users learn quickly and gain a fast sense of mastery when they are placed “in charge.” Paradoxically, however, people do not feel free in the absence of all boundaries. A little child will cry equally when confined in too small a space or left to wander in a large and empty warehouse. Adults, too, feel most comfortable in an environment that is neither confining nor infinite, an environment explorable, but not hazardous.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Enable users to make their own decisions, even ones aesthetically poor or behaviourally less efficient</h4>
+      <p class="col-md-10 col-md-offset-1">Autonomy means users get to decide what keyboard they want to use, how they want their desktops to look (even if they like clutter), and what kind of apps they want to run. When developers take that kind of control away, users can be left frustrated and angry.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Exercise responsible control</h4>
+      <p class="col-md-10 col-md-offset-1">Allowing users latitude does not mean developers should abandon all control. On the contrary, developers must exercise necessary control. Users should not be given so much rope they hang themselves. However, some developers today are not only taking excessive control, but making huge HCI errors in the process, like restricting text to fonts and sizes that people with ordinary eyesight can’t read. They offer editing schemes that require the user to use their fat finger to place the text cursor with pixel-precision accuracy just to avoid adding the necessary arrow keys to their aesthetically perfect, but functionally crippled, keyboard.</p>
+
+      <p class="col-md-10 col-md-offset-1">They also set an arbitrary timing and movement threshold for determining whether a user is or is not pressing a link on purpose, rather than her just pausing for an instant at the start of an upward swipe for scroll, for example. They then offer the user no way to alter that threshold, so many users find themselves triggering links to unwanted pages many, many times per day. That is an irresponsible application of control. We learned 30 years ago that users needed access to a slider for mouse double-clicking. Touch users need the same thing for link timing.</p>
+
+      <blockquote class="col-md-10 col-md-offset-1">
+        <h3>Perfect Link Triggering, Every Time</h3>
+        <p>In thinking about solutions to problems like accidental link triggering, you have to consider the difference between a user who is accidentally triggering a link and a user who intends to trigger it.</p>
+
+        <p>The difference is easy when you think about it: I look at a link when I’m trying to trigger it. I’m not looking at the ones that I trigger by accident. Turn on the camera or use a built-in dedicated eye-tracker to look at the user’s eyes. If he looks right at the link for long enough for it to register in his mind that he’s touching it, he’s trying to follow the link. If he’s not looking at it, he’s accidentally touching it. When you have determined purposeful touching, trigger the link. If you determine the user is not purposely touching, ignore the fact that the user is touching it.</p>
+
+        <p>To save energy, to carry out this method, the camera or eye tracker need not be turned on until the user is hovering over or pressing a link. The method and algorithm may require minor tweaks in timing, but it should prove quite accurate.</p>
+
+        <p>This may have already been invented, but, if not, it’s called, “Accidental Link Triggering Error-Reduction Method Using Eye Tracking,” and I hereby put it in the public domain.</p>
+      </blockquote>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Use status mechanisms to keep users aware and informed</h4>
+      <p class="col-md-10 col-md-offset-1">No autonomy can exist in the absence of control, and control cannot be exerted in the absence of sufficient information. Status mechanisms are vital to supplying the information necessary for users to respond appropriately to changing conditions.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Keep status information up to date and within easy view</h4>
+      <p class="col-md-10 col-md-offset-1">Users should not have to seek out status information. Rather, they should be able to glance at their work environment and be able to gather at least a first approximation of state and workload.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Ensure status information is accurate</h4>
+      <p class="col-md-10 col-md-offset-1">Status information can be up to date, yet inaccurate. At the time of this writing, when a user updated an iPhone or iPad to a new generation of system software, a progress indicator would appear showing that it will take approximately five minutes to complete the task. Actually, it typically takes an hour or more. (The new system itself would update in five minutes, but then all the other tens or hundreds of megabytes of information on the phone had to be re-uploaded.) The user, having been lied to, was left with no way to predict when she might actually get her device back. Such a user is not feeling autonomous.</p>
+
+		</div>
+		</div>
+	</div>
+
+	<!-- back to top icon -->
+  <a href="#0" class="cd-top">Top</a>
+
+  <!-- footer navigation -->
+  <footer class="footer">
+    <a class="pull-left" href="anticipation.html">back to -- Anticipation</a>
+    <a class="pull-right" href="color.html">next -- Color</a>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$("#main-nav-container").load("nav.html");
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined js -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- Back to top javascript -->
+    <script type="text/javascript" src="../js/back-top.js"></script>
+  </body>
+</html>

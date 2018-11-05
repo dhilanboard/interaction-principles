@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Principles of Interaction Design</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- User - custom stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-phone.css"> -->
+
+    <!-- Stylesheet for sass directory  -->
+    <link rel="stylesheet" href="../sass/style.css">
+
+    <!-- back to top css -->
+    <link rel="stylesheet" type="text/css" href="../css/to-top.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,300,400,500" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main principles-pages">
+
+  	<div id="main-nav-container">
+	  	<!-- the main nav content (nav.html) comes here -->
+  	</div>
+
+  	<div class="container">
+		<div class="row content-row">
+			<div id="anticipation" class="content-container col-md-12">
+			<h1 class="col-md-10 col-md-offset-1">Visible Navigation</h1>
+			<a href="introduction.html" class="col-md-offset-1 col-md-10 backto">back to introduction</a>
+			
+			<h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Make navigation visible</h4>
+
+      <p class="col-md-10 col-md-offset-1">Most users cannot and will not build elaborate mental maps and will become lost or tired if expected to do so.</p>
+
+      <p class="col-md-10 col-md-offset-1">The World Wide Web, for all its pretty screens and fancy buttons, is, in effect, an invisible navigation space. True, you can always see the specific page you are on, but you cannot see anything of the vast space between pages. Once users reach our sites or web-based applications, we must take care to reduce navigation to a minimum and make sure the remaining navigation is clear and natural. Ideally, present the illusion that users are always in the same place, with the work brought to them, as is done with the desktop metaphor. This not only eliminates the need for maps and other navigational aids, it offers users a greater sense of mastery and autonomy.</p>
+
+      <p class="col-md-10 col-md-offset-1">While you may have a thousand pages on your site, if every one of them has the same heading and the same main and secondary menus, the illusion to the user will be that she is always on the same page with content changing in one panel of the page. They can still be lost if they don’t know what panel they are viewing, so reinforce it by highlighting the current menu items that resulted in that particular panel, as well as offering them, in development systems that support it (and they all should), bread crumbing, such as:</p>
+
+      <p class="col-md-10 col-md-offset-1"><img class="img-responsive" width="400px" src="https://d13yacurqjgara.cloudfront.net/users/108183/screenshots/2729768/56_breadcrumbs_volorf.png"></p>
+
+      <p class="col-md-10 col-md-offset-1">to help them build a mental model. As with the inherent statelessness of the web (see Track State, above), we must go beyond blindly accepting what the web’s architects have given us by adding layers of capability and protection that users want and need. That the web’s navigation is inherently invisible is a challenge, not an inevitability.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Limit screen counts by using overlays</h4>
+
+      <p class="col-md-10 col-md-offset-1">In designing complex apps, strive for a minimal number of screens, each representing a separate and distinct task the user will be performing. When a user needs to perform a subtask, bring up an overlay that is smaller than full screen, so that users can see a darkened image of the main screen still present in the background. What is seen need not be memorized, so users need not remember how that overlay maps onto the screen behind it.</p>
+
+		</div>
+		</div>
+	</div>
+
+	<!-- back to top icon -->
+  <a href="#0" class="cd-top">Top</a>
+
+  <!-- footer navigation -->
+  <footer class="footer">
+    <a class="pull-left" href="track-state.html">back to -- State</a>
+    <a class="pull-right" href="introduction.html">go to -- Introduction</a>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$("#main-nav-container").load("nav.html");
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined js -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- Back to top javascript -->
+    <script type="text/javascript" src="../js/back-top.js"></script>
+  </body>
+</html>

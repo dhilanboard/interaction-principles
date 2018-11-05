@@ -1,0 +1,125 @@
+<a class="main-page-nav-open" href="#">
+	<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+</a>
+
+<div class="principles-nav-list container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<a class="main-page-nav-close" href="#">
+				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			</a>
+			<div class="col-md-8 principles-navs">
+				<h3 class="col-md-offset-1">Principles of IxD</h3>
+				<ol class="list-unstyled">
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<i><a href="introduction.html">Introduction</a></i>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a id="aesthetics-nav" href="aesthetics.html">Aesthetics</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="anticipation.html">Anticipation</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="autonomy.html">Autonomy</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="color.html">Color</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="consistency.html">Consistency</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="defaults.html">Defaults or Standard Practices</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="discoverability.html">Discoverability</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="efficiency.html">Efficiency of the User</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="explorable-interfaces.html">Explorable Interfaces</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="fitts-law.html">Fitts's Law</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="human-interface-objects.html">Human-Interface Objects</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="latency-reduction.html">Latency Reduction</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="learnability.html">Learnability</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="metaphors.html">Metaphors</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="protect-users-work.html">Protect Users' Work</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="readability.html">Readability</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="simplicity.html">Simplicity</a>
+					</li>
+					<li class="col-sm-5 col-md-4 col-md-offset-1">
+						<a href="track-state.html">State: Track it</a>
+					</li>
+					<li class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-1">
+						<a href="visible-navigation.html">Visible Navigation</a>
+					</li>
+				</ol>
+			</div>
+			<div class="col-md-2 col-md-offset-1 global-nav">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Glossary</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Menu normal dropdown content -->
+<!-- <div class="dropdown">
+	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		Main Navigation here
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Principles</a></li>
+		<li><a href="#">Gestalt</a></li>
+		<li><a href="#">Dieter Rams</a></li>
+		<li><a href="#">Glossary</a></li>
+		<li><a href="#">Accessibility</a></li>
+		<li><a href="#">Psychology</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</div> -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// fot the main nav - fullpage animation
+		// $('#main-nav').load("nav.html");
+		$('.main-page-nav-open').click(function() {
+			$('.principles-nav-list').toggleClass('open-list');
+			$('.container').hide('fast/100/fast');
+		});
+		$('.main-page-nav-close').click(function() {
+			$('.principles-nav-list').toggleClass('open-list');
+			$('.container').show('fast/100/fast');
+		});
+
+		// $('#aesthetics-nav').on('click', function(){
+		// 	$('.content-row').load('aesthetics.html');
+		// 	$('.principles-nav-list').toggleClass('open-list');
+		// 	$('.container').show('slow/300/fast');
+		// });
+
+		
+	});
+</script>

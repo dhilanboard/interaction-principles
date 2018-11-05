@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Principles of Interaction Design</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- User - custom stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-phone.css"> -->
+
+    <!-- Stylesheet for sass directory  -->
+    <link rel="stylesheet" href="../sass/style.css">
+
+    <!-- back to top css -->
+    <link rel="stylesheet" type="text/css" href="../css/to-top.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,300,400,500" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main principles-pages">
+
+  	<div id="main-nav-container">
+	  	<!-- the main nav content (nav.html) comes here -->
+  	</div>
+
+  	<div class="container">
+		<div class="row content-row">
+			<div id="anticipation" class="content-container col-md-12">
+			<h1 class="col-md-10 col-md-offset-1">State</h1>
+			<a href="introduction.html" class="col-md-offset-1 col-md-10 backto">back to introduction</a>
+			
+			<h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Because many of our browser-based products exist in a stateless environment, we have the responsibility to track state as needed</h4>
+
+      <p class="col-md-10 col-md-offset-1">Our systems should “know”:<br>
+
+        1. Whether this is the first time the user has been in the system<br>
+        2. Where the user was when they left off in the last session<br>
+        3. What the user has found of interest based on time spent with a pointing device moving, objects being touched, etc., in different areas<br>
+        4. Where the user has been during this session<br>
+        5. Where the user is right now and what they are doing</p>
+        
+      <p class="col-md-10 col-md-offset-1">and myriad other details. In addition to simply knowing where our users have been, we can also make good use of what they’ve done.</p>
+
+      <p class="col-md-10 col-md-offset-1">One site with which you are familiar is so involved in and good at tracking state that it could be described as a state-tracking system that happens to do other stuff. That site is amazon.com. Their uncanny ability to make suggestions on what we might want to explore and buy is the result of their understanding our full history on their site. They know what expensive items we’ve come back to repeatedly in the past, what we’ve lingered over recently, and what would go well with what we just or recently purchased based on like-minded individuals.</p>
+
+      <p class="col-md-10 col-md-offset-1">One site with which you are familiar is so involved in and good at tracking state that it could be described as a state-tracking system that happens to do other stuff. That site is amazon.com. Their uncanny ability to make suggestions on what we might want to explore and buy is the result of their understanding our full history on their site. They know what expensive items we’ve come back to repeatedly in the past, what we’ve lingered over recently, and what would go well with what we just or recently purchased based on like-minded individuals.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> State information should be stored in encrypted form on the server when they log off</h4>
+
+      <p class="col-md-10 col-md-offset-1">Users should be able to log off at work, go home, and take up exactly where they left off. Following the principle of <a href="#">Protect Users’ Work</a>, whatever they were last working on should be preserved in its current condition.</p>
+
+      <p class="col-md-10 col-md-offset-1">A private service for doctors, <i>Physicians On Line</i>, does an excellent job with this. Doctors can be 95% of the way through a complex transaction, log off, log in again six weeks later from another part of the world, and the service will ask them if they want to be taken right back to where they were.</p>
+
+      <p class="col-md-10 col-md-offset-1">“Track State” came late to this list, in 1996. Up until then, everyone had been tracking state on their own, without question. Because the web browsers failed to provide any tools beyond the purple color of a link indicating that link had been previously visited, engineers took this to mean they no longer needed to concern themselves with state at all. To the contrary, what it meant is that, from that day until this, applications engineers and designers have had to take over the full responsibility for tracking state that had historically been shared with the systems engineers, making the job that much harder.</p>
+
+      <h4 class="col-md-10 col-md-offset-1"><span class="principles-tag">Principle:</span> Make clear what you will store &amp; protect the user’s information</h4>
+
+      <p class="col-md-10 col-md-offset-1">State data is neither good nor evil, but it can be put to both uses. You should make clear in your privacy policy that you will be saving data, making your case for why it is in the user’s interest. Any data from the user, including state data, should be encrypted and safeguarded.</p>
+
+		</div>
+		</div>
+	</div>
+
+	<!-- back to top icon -->
+  <a href="#0" class="cd-top">Top</a>
+
+  <!-- footer navigation -->
+  <footer class="footer">
+    <a class="pull-left" href="simplicity.html">back to -- Simplicity</a>
+    <a class="pull-right" href="visible-navigation.html">next -- Visible Navigation</a>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$("#main-nav-container").load("nav.html");
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined js -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- Back to top javascript -->
+    <script type="text/javascript" src="../js/back-top.js"></script>
+  </body>
+</html>
